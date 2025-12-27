@@ -118,9 +118,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// =======================
-// START SERVER & DB
-// =======================
+    
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
